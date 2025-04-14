@@ -1,0 +1,253 @@
+body {
+    font-family: 'Lovers Quarrel', cursive;
+    background-color: #ffe6f0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: 'Lovers Quarrel';
+    src: url('fuente_lovers_quarrel.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.corazones-flotantes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.corazon {
+    color: #f48fb1;
+    font-size: 2em;
+    position: absolute;
+    animation: flotar 5s linear infinite, cambiarOpacidad 3s linear infinite alternate;
+    opacity: 0;
+}
+
+.corazon.c1 {
+    top: 10%;
+    left: 10%;
+    animation-delay: 0s;
+    font-size: 2.5em;
+}
+
+.corazon.c2 {
+    top: 20%;
+    left: 80%;
+    animation-delay: 1s;
+    font-size: 1.8em;
+    color: #e91e63;
+}
+
+.corazon.c3 {
+    top: 40%;
+    left: 30%;
+    animation-delay: 2s;
+    font-size: 3em;
+}
+
+.corazon.c4 {
+    top: 60%;
+    left: 90%;
+    animation-delay: 3s;
+    font-size: 2.2em;
+    color: #f06292;
+}
+
+.corazon.c5 {
+    top: 80%;
+    left: 5%;
+    animation-delay: 4s;
+    font-size: 2.8em;
+}
+
+.corazon.c6 {
+    top: 5%;
+    left: 50%;
+    animation-delay: 1.5s;
+    font-size: 2em;
+    color: #f48fb1;
+}
+
+.corazon.c7 {
+    top: 35%;
+    left: 65%;
+    animation-delay: 2.5s;
+    font-size: 1.5em;
+}
+
+.corazon.c8 {
+    top: 70%;
+    left: 20%;
+    animation-delay: 3.5s;
+    font-size: 3.2em;
+    color: #e91e63;
+}
+
+.corazon.c9 {
+    top: 95%;
+    left: 75%;
+    animation-delay: 0.5s;
+    font-size: 2em;
+}
+
+.corazon.c10 {
+    top: 55%;
+    left: 0%;
+    animation-delay: 4.5s;
+    font-size: 2.6em;
+    color: #f06292;
+}
+
+@keyframes flotar {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(-100vh) rotate(360deg);
+    }
+}
+
+@keyframes cambiarOpacidad {
+    0% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.3;
+    }
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+}
+
+header h1 {
+    color: #e91e63;
+    margin-bottom: 30px;
+    font-size: 3em;
+    font-weight: normal;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    margin-top: 40px;
+}
+
+.mensaje-principal {
+    margin-bottom: 50px;
+}
+
+.imagen-corazon-grande {
+    width: 180px;
+    height: auto;
+    margin-bottom: 25px;
+    animation: pulse 2s infinite alternate;
+}
+
+.mensaje-principal p {
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.razones h2,
+.pregunta-final h2 {
+    color: #e91e63;
+    margin-top: 35px;
+    margin-bottom: 25px;
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+.razones ul {
+    list-style: none;
+    padding: 0;
+}
+
+.razones li {
+    margin-bottom: 15px;
+    color: #666;
+    font-size: 1.1em;
+    position: relative;
+    padding-left: 30px;
+    text-align: left;
+}
+
+.razones li:before {
+    content: '💖';
+    color: #f06292;
+    position: absolute;
+    left: 0;
+    font-size: 1.2em;
+}
+
+.botones {
+    margin-top: 40px;
+}
+
+.botones button {
+    padding: 15px 30px;
+    border: 2px solid #f06292;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin: 0 20px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.botones .si {
+    background-color: #f06292;
+    color: white;
+}
+
+.botones .no {
+    background-color: transparent;
+    color: #e91e63;
+}
+
+.botones button:hover {
+    background-color: #e91e63;
+    color: white;
+    border-color: #e91e63;
+    transform: scale(1.05);
+}
+
+.pregunta-final p.nota {
+    color: #777;
+    margin-top: 25px;
+    font-size: 1em;
+    font-style: italic;
+}
+
+footer {
+    margin-top: 50px;
+    color: #888;
+    font-size: 0.95em;
+}
+
+footer p.fecha {
+    font-style: italic;
+}

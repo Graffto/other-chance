@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un Latido Más por Nuestro Amor</title>
+    <link rel="stylesheet" href="css/stylos.css">
+    <style>
+        /* Estilos básicos para el slider (se pueden mover al style.css) */
+        .slider-navegacion {
+            position: fixed;
+            /* Fijo en la parte superior */
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            /* Fondo semitransparente */
+            padding: 15px 0;
+            text-align: center;
+            z-index: 100;
+            /* Asegura que esté por encima del contenido */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .slider-navegacion a {
+            color: #e91e63;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .slider-navegacion a:hover {
+            color: #f06292;
+        }
+
+        /* Estilos para las secciones para que el scroll funcione */
+        main section {
+            padding-top: 100px;
+            /* Espacio para no quedar debajo de la navegación fija */
+            padding-bottom: 50px;
+        }
+
+        main section:first-child {
+            padding-top: 150px;
+            /* Ajuste para la primera sección */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="corazones-flotantes">
+        <div class="corazon c1">♥</div>
+        <div class="corazon c2">💕</div>
+        <div class="corazon c3">❤️</div>
+        <div class="corazon c4">💘</div>
+        <div class="corazon c5">💖</div>
+        <div class="corazon c6">♥</div>
+        <div class="corazon c7">💕</div>
+        <div class="corazon c8">❤️</div>
+        <div class="corazon c9">💘</div>
+        <div class="corazon c10">💖</div>
+    </div>
+
+    <div class="slider-navegacion">
+        <a href="#mensaje">Nuestro Amor</a>
+        <a href="#razones">¿Por Qué Otra Oportunidad?</a>
+        <a href="#pregunta">¿Una Nueva Oportunidad?</a>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>AMOR DE MI VIDA, Cada Latido Pide Tu Regreso</h1>
+        </header>
+        <main>
+            <section id="mensaje" class="mensaje-principal">
+                <img src="img/heart.jpg" alt="Un corazón grande latiendo" class="imagen-corazon-grande">
+                <p>Mi amor eterno, desde que te fuiste, el mundo se siente incompleto. Cada recuerdo de nosotros es un
+                    tesoro que abrazo con fuerza, y mi corazón anhela crear muchos más a tu lado.</p>
+                <p>Nuestras risas eran la melodía más hermosa, nuestros abrazos el refugio más cálido. Echo de menos la
+                    forma en que me mirabas, como si yo fuera todo tu universo. Ese amor, mi amor, es lo que suplico
+                    recuperar.</p>
+                <p>Sé que he cometido errores, y cada día me arrepiento profundamente. Estoy dispuesto/a a hacer lo que
+                    sea necesario para sanar las heridas y construir un futuro donde nuestro amor florezca aún más
+                    fuerte.</p>
+            </section>
+
+            <section id="razones" class="razones">
+                <h2>Razones por las que nuestro amor merece una segunda oportunidad:</h2>
+                <ul>
+                    <li>Mi compromiso de cambiar y crecer es inquebrantable, todo por nosotros.</li>
+                    <li>La conexión especial que compartimos es un lazo que creo que nunca se romperá por completo.</li>
+                    <li>Extraño profundamente la alegría que solo tú sabes cómo despertar en mí.</li>
+                    <li>Quiero dedicar cada día a demostrarte cuánto te amo y lo esencial que eres en mi vida.</li>
+                    <li>Visualizo un futuro lleno de momentos felices juntos, ¿me permites construirlo contigo?</li>
+                </ul>
+            </section>
+
+            <section id="pregunta" class="pregunta-final">
+                <h2>Mi amado amanecer, ¿hay una pequeña ventana en tu corazón que aún guarde espacio para nosotros? ¿Me
+                    darías la oportunidad de intentarlo de nuevo?</h2>
+                <div class="botones">
+                    <button class="si">Mi alma grita ¡SÍ!</button>
+                    <button class="no">Entenderé, aunque duela</button>
+                </div>
+                <p class="nota">Siempre serás el amor de mi vida, sin importar tu respuesta.</p>
+            </section>
+        </main>
+        <footer>
+            <p>Con todo mi ser,</p>
+            <p>JUAN MA</p>
+            <p class="fecha">14/04/2025</p>
+        </footer>
+    </div>
+</body>
+
+</html>
